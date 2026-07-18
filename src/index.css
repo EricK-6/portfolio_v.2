@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased dark:bg-paper-dark dark:text-ink-dark;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    /* engineering graph paper — fine enough to whisper, never to talk */
+    background-image:
+      linear-gradient(to right, rgb(28 25 23 / 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(28 25 23 / 0.04) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  .dark body {
+    background-image:
+      linear-gradient(to right, rgb(231 229 228 / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(231 229 228 / 0.05) 1px, transparent 1px);
+  }
+
+  ::selection {
+    @apply bg-ink text-paper dark:bg-ink-dark dark:text-paper-dark;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-neutral-500;
+  }
+}
+
+@layer components {
+  /* quiet underlined link: the underline is the whole affordance */
+  .link {
+    @apply underline decoration-neutral-400 decoration-1 underline-offset-[3px] transition-colors hover:decoration-current dark:decoration-neutral-600 dark:hover:decoration-current;
+  }
+
+  .hairline {
+    @apply border-neutral-300/80 dark:border-neutral-800;
+  }
+}
+
+@media print {
+  body {
+    background-image: none;
+  }
+  .print-hidden {
+    display: none !important;
+  }
+}
