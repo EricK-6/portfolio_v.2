@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://erickk.cloud/sitemap.xml
+Sitemap: https://erick-6.github.io/portfolio_v.2/sitemap.xml
