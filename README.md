@@ -4,12 +4,12 @@ Hey, I'm **Dohyun (Eric) Kim**, a Computer Systems Engineering (Hons) student at
 
 🔗 **Live at [erick-6.github.io/portfolio_v.2](https://erick-6.github.io/portfolio_v.2/)** (new domain TBD; rev 1 stays at [erickk.cloud](https://erickk.cloud/))
 
-Rev 2.0 is a deliberate about-face from rev 1 (a 3D "space mode" with a boarding-pass hero, terminal dock and command palette — it lives on in git history). The new site is typography-first and styled like a **component datasheet**, because that's the kind of engineer I am:
+Rev 2.0 is a deliberate about-face from rev 1 (a 3D "space mode" with a boarding-pass hero, terminal dock and command palette — it lives on in its own repo, [`edk.portfolio`](https://github.com/EricK-6/edk.portfolio)). The new site is typography-first and styled like a **component datasheet**, because that's the kind of engineer I am:
 
 - One narrow column of prose on faint engineering graph paper.
 - Mono, numbered section labels (`01 · SELECTED WORK`) and hairline rules.
 - A **SPECIFICATIONS** table for the quick facts — programme, graduation, focus, certs.
-- Part number `EK-2027`, an 8-pin DIP chip as the site mark and favicon.
+- Part number `EKmega327P` — an ATmega328P one digit off, pointing at the '27 graduation — with an 8-pin DIP chip as the site mark and favicon.
 - Exactly one drop of colour: the emerald "in stock" status dot.
 - Light (paper) and dark (graphite) themes, following the OS and remembered after a toggle.
 
@@ -49,7 +49,7 @@ Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/dep
 ```
 ├── .github/workflows/deploy.yml   # auto-deploy on push to main
 ├── public/
-│   ├── CV_SWE.pdf                 # the two CVs linked from “reach me”
+│   ├── CV_SWE.pdf                 # the two CVs linked from “ordering information”
 │   ├── CV_EEE.pdf
 │   ├── chip.svg                   # favicon (the DIP-8 mark)
 │   └── 404.html                   # matching minimal 404
@@ -67,6 +67,6 @@ Everything lives in [`src/App.jsx`](src/App.jsx): the intro prose, the `WORK` ar
 
 ## Notes to self
 
-- The old maximalist site is at tag/commit history before the rev 2.0 redesign — `git log` is the museum.
+- Rev 1's code isn't in this repo — this history starts at the rev 2.0 rewrite. The museum is [`edk.portfolio`](https://github.com/EricK-6/edk.portfolio), still deployed at [erickk.cloud](https://erickk.cloud/).
 - Contact is a plain `mailto:` now (no Formspree form in rev 2.0).
 - `public/CV_*.pdf` are public once deployed — keep redacted versions if needed.

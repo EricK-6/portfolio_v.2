@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 // ---------------------------------------------------------------------------
-// erickk.cloud, rev 2.0 — the site as a component datasheet (part EK-2027).
+// Eric Kim's site, rev 2.0 — the site as a component datasheet (part EKmega327P).
 // One narrow column of prose on graph paper; the typography is the design.
 // All content lives in this file, so editing the site means editing prose.
 // ---------------------------------------------------------------------------
@@ -15,9 +15,10 @@ const WORK = [
     name: 'Winnie the Bot',
     year: '2025',
     body:
-      'Companion robot that holds your gaze, waves, and talks back: dual bare metal ' +
-      'ATmega328Ps driving servos, an AI camera, and audio, in a 3D modelled enclosure ' +
-      'measured out by vernier caliper. 3rd place, UoA ECSE Design Competition.',
+      'Companion robot that holds your gaze, waves, and talks back — an embedded system ' +
+      'that reads as a character, not a circuit board. Dual bare metal ATmega328Ps ' +
+      'driving servos, an AI camera, and audio, in a 3D modelled enclosure measured out ' +
+      'by vernier caliper. 3rd place, UoA ECSE Design Competition.',
     links: [],
   },
   {
@@ -140,10 +141,10 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="reach" index="03" title="Reach me">
+      <Section id="reach" index="03" title="Ordering information">
         <p className="leading-relaxed text-neutral-600 dark:text-neutral-400">
-          Email reaches me fastest. The CV comes in two flavours, software and hardware;
-          pick whichever matches your team.
+          Email reaches me fastest, and I read every message. The CV comes in two
+          flavours, software and hardware; pick whichever matches your team.
         </p>
         <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2.5 font-mono text-xs">
           <li>
@@ -249,7 +250,7 @@ function SpecTable() {
         Specifications
       </h2>
       <dl className="mt-3 divide-y divide-neutral-300/60 border-y hairline dark:divide-neutral-800/80">
-        <SpecRow label="part no.">EK-2027 · rev 2.0</SpecRow>
+        <SpecRow label="part no.">EKmega327P · rev 2.0</SpecRow>
         <SpecRow label="programme">
           BE (Hons), Computer Systems Engineering, University of Auckland
         </SpecRow>
@@ -277,6 +278,10 @@ function SpecTable() {
           </span>
         </SpecRow>
       </dl>
+      {/* the fortune cookie from rev 1, reborn as a datasheet footnote */}
+      <p className="mt-2 font-mono text-[10px] text-neutral-500 dark:text-neutral-500">
+        note 1 · a clean solder joint is worth a thousand debug sessions.
+      </p>
     </section>
   )
 }
@@ -314,7 +319,7 @@ function Footer({ theme, onToggleTheme }) {
   return (
     <footer className="mt-16 flex items-center justify-between gap-4 border-t hairline pb-10 pt-5">
       <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-500">
-        EK-2027 · © 2026 Dohyun (Eric) Kim
+        <span className="normal-case">EKmega327P</span> · © 2026 Dohyun (Eric) Kim
       </p>
       <div className="flex items-center gap-4">
         <span className="hidden font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500 sm:inline dark:text-neutral-500">
