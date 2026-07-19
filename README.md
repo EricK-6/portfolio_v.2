@@ -7,7 +7,7 @@ Hey, I'm **Dohyun (Eric) Kim**, a Computer Systems Engineering (Hons) student at
 Rev 2.0 is a deliberate about-face from rev 1 (a 3D "space mode" with a boarding-pass hero, terminal dock and command palette; it lives on in its own repo, [`edk.portfolio`](https://github.com/EricK-6/edk.portfolio)). The new site is typography-first and styled like a **component datasheet**, because that's the kind of engineer I am:
 
 - One narrow column of prose on faint engineering graph paper.
-- Mono, numbered section labels (`01 · SELECTED WORK`) and hairline rules.
+- Mono, numbered section labels (`01 · BUILT AND SHIPPED`) and hairline rules.
 - A **SPECIFICATIONS** table for the quick facts: programme, graduation, focus, certs.
 - Part number `EKmega327P` (an ATmega328P one digit off, pointing at the '27 graduation), with an 8-pin DIP chip as the site mark and favicon.
 - Exactly one drop of colour: the emerald "in stock" status dot.
@@ -49,7 +49,7 @@ Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/dep
 ```
 ├── .github/workflows/deploy.yml   # auto-deploy on push to main
 ├── public/
-│   ├── CV_SWE.pdf                 # the two CVs linked from “ordering information”
+│   ├── CV_SWE.pdf                 # the two CVs linked from the header
 │   ├── CV_EEE.pdf
 │   ├── chip.svg                   # favicon (the DIP-8 mark)
 │   └── 404.html                   # matching minimal 404

@@ -16,9 +16,9 @@ const WORK = [
     year: '2025',
     body:
       'Companion robot that holds your gaze, waves, and talks back: an embedded system ' +
-      'that reads as a character, not a circuit board. Dual bare metal ATmega328Ps ' +
-      'driving servos, an AI camera, and audio, in a 3D modelled enclosure measured out ' +
-      'by vernier caliper. 3rd place, UoA ECSE Design Competition.',
+      'that reads as a character, not a circuit board. Dual ATmega328P NANOs run face ' +
+      'tracking, arm movement, and voice dialogue simultaneously. 3rd place, UoA ECSE ' +
+      'Design Competition.',
     links: [],
   },
   {
@@ -87,102 +87,90 @@ export default function App() {
   return (
     <div className="mx-auto max-w-[42rem] px-6 pb-4 pt-14 sm:pt-20">
       <a
-        href="#work"
+        href="#content"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-paper focus:px-3 focus:py-2 focus:font-mono focus:text-xs dark:focus:bg-paper-dark"
       >
         Skip to content
       </a>
 
-      <Header />
-      <Intro />
-      <SpecTable />
+      <Header theme={theme} onToggleTheme={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))} />
+      <main id="content">
+        <Intro />
+        <SpecTable />
 
-      <Section id="work" index="01" title="Selected work">
-        <ul className="space-y-7">
-          {WORK.map((w) => (
-            <li key={w.name}>
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <h3 className="font-semibold">{w.name}</h3>
-                <span className="font-mono text-xs text-neutral-500 dark:text-neutral-500">
-                  {w.year}
-                </span>
-                {w.links.map((l) => (
-                  <Ext key={l.href} href={l.href} mono>
-                    {l.label}
-                  </Ext>
-                ))}
-              </div>
-              <p className="mt-1.5 leading-relaxed text-neutral-600 dark:text-neutral-400">
-                {w.body}
-              </p>
+        <Section id="work" index="01" title="Built and shipped">
+          <ul className="space-y-7">
+            {WORK.map((w) => (
+              <li key={w.name}>
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <h3 className="font-semibold">{w.name}</h3>
+                  <span className="font-mono text-xs text-neutral-500 dark:text-neutral-500">
+                    {w.year}
+                  </span>
+                  {w.links.map((l) => (
+                    <Ext key={l.href} href={l.href} mono>
+                      {l.label}
+                    </Ext>
+                  ))}
+                </div>
+                <p className="mt-1.5 leading-relaxed text-neutral-600 dark:text-neutral-400">
+                  {w.body}
+                </p>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-7 text-neutral-600 dark:text-neutral-400">
+            More on <Ext href={GITHUB}>GitHub</Ext>, including an Android meal planner and a
+            PyQt forecasting desktop app.
+          </p>
+        </Section>
+
+        <Section id="teaching" index="02" title="Teaching the craft">
+          <div className="space-y-4 leading-relaxed text-neutral-600 dark:text-neutral-400">
+            <p>
+              The constant this year is teaching. I'm a Teaching Assistant for ELECTENG 292
+              (Electronics) at the University of Auckland, and a robotics instructor at
+              ciLab, coaching school teams for nationwide competitions.
+            </p>
+            <p>
+              Around the university I tutor junior engineers at the Korean Engineering Body,
+              and I keep coming back to robotics: 40+ volunteer hours at NZRO 2025, then
+              staff at NZRO 2026 and the World Robot Olympiad 2026 with CARES.
+            </p>
+          </div>
+        </Section>
+
+        <Section id="reach" index="03" title="Direct line">
+          <p className="leading-relaxed text-neutral-600 dark:text-neutral-400">
+            Email is the direct line, and I read every message. The CVs live at the top:
+            swe for software teams, eee for hardware.
+          </p>
+          <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2.5 font-mono text-xs">
+            <li>
+              <a className="link" href={`mailto:${EMAIL}`}>
+                {EMAIL}
+              </a>
             </li>
-          ))}
-        </ul>
-        <p className="mt-7 text-neutral-600 dark:text-neutral-400">
-          More on <Ext href={GITHUB}>GitHub</Ext>, including an Android meal planner and a
-          PyQt forecasting desktop app.
-        </p>
-      </Section>
+            <li>
+              <Ext href={GITHUB} mono>
+                github
+              </Ext>
+            </li>
+            <li>
+              <Ext href={LINKEDIN} mono>
+                linkedin
+              </Ext>
+            </li>
+          </ul>
+        </Section>
+      </main>
 
-      <Section id="teaching" index="02" title="Teaching & community">
-        <div className="space-y-4 leading-relaxed text-neutral-600 dark:text-neutral-400">
-          <p>
-            The constant this year is teaching. I'm a Teaching Assistant for ELECTENG 292
-            (Electronics) at the University of Auckland, running tutorials, lab sessions,
-            and test invigilation, and a robotics instructor at ciLab, where school teams
-            build and program robots for nationwide competitions.
-          </p>
-          <p>
-            Around the university I've served as an Academic Team Executive at the Korean
-            Engineering Body, tutoring junior engineering students, and I keep coming back to
-            robotics competitions: 40+ volunteer hours at the NZ Robotics Olympiad 2025, then
-            returning as staff for NZRO 2026 and the World Robot Olympiad 2026 with CARES.
-          </p>
-        </div>
-      </Section>
-
-      <Section id="reach" index="03" title="Ordering information">
-        <p className="leading-relaxed text-neutral-600 dark:text-neutral-400">
-          Email reaches me fastest, and I read every message. The CV comes in two
-          flavours, software and hardware; pick whichever matches your team.
-        </p>
-        <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2.5 font-mono text-xs">
-          <li>
-            <a className="link" href={`mailto:${EMAIL}`}>
-              {EMAIL}
-            </a>
-          </li>
-          <li>
-            <Ext href={GITHUB} mono>
-              github
-            </Ext>
-          </li>
-          <li>
-            <Ext href={LINKEDIN} mono>
-              linkedin
-            </Ext>
-          </li>
-          <li>
-            <a className="link" href="./CV_SWE.pdf" target="_blank" rel="noreferrer">
-              cv · software
-              <Glyph>↓</Glyph>
-            </a>
-          </li>
-          <li>
-            <a className="link" href="./CV_EEE.pdf" target="_blank" rel="noreferrer">
-              cv · hardware
-              <Glyph>↓</Glyph>
-            </a>
-          </li>
-        </ul>
-      </Section>
-
-      <Footer theme={theme} onToggleTheme={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))} />
+      <Footer />
     </div>
   )
 }
 
-function Header() {
+function Header({ theme, onToggleTheme }) {
   return (
     <header>
       <div className="flex items-center gap-2.5">
@@ -191,21 +179,38 @@ function Header() {
           Eric Kim
           <span className="sr-only">, Dohyun Kim, Computer Systems Engineering student</span>
         </h1>
+        <button
+          type="button"
+          onClick={onToggleTheme}
+          aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+          className="print-hidden ml-auto inline-flex h-7 w-7 items-center justify-center border hairline text-neutral-500 transition-colors hover:text-ink dark:text-neutral-400 dark:hover:text-ink-dark"
+        >
+          {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+        </button>
       </div>
-      <nav
-        aria-label="Sections"
-        className="mt-3.5 flex gap-6 font-mono text-xs lowercase text-neutral-600 dark:text-neutral-400"
-      >
-        <a className="transition-colors hover:text-ink dark:hover:text-ink-dark" href="#work">
-          work
-        </a>
-        <a className="transition-colors hover:text-ink dark:hover:text-ink-dark" href="#teaching">
-          teaching
-        </a>
-        <a className="transition-colors hover:text-ink dark:hover:text-ink-dark" href="#reach">
-          reach
-        </a>
-      </nav>
+      <div className="mt-3.5 flex flex-wrap items-baseline gap-x-6 gap-y-2 font-mono text-xs lowercase text-neutral-600 dark:text-neutral-400">
+        <nav aria-label="Sections" className="flex gap-6">
+          <a className="transition-colors hover:text-ink dark:hover:text-ink-dark" href="#work">
+            projects
+          </a>
+          <a className="transition-colors hover:text-ink dark:hover:text-ink-dark" href="#teaching">
+            teaching
+          </a>
+          <a className="transition-colors hover:text-ink dark:hover:text-ink-dark" href="#reach">
+            contact
+          </a>
+        </nav>
+        <div className="ml-auto flex gap-5">
+          <a className="link" href="./CV_SWE.pdf" target="_blank" rel="noreferrer">
+            cv · swe
+            <Glyph>↓</Glyph>
+          </a>
+          <a className="link" href="./CV_EEE.pdf" target="_blank" rel="noreferrer">
+            cv · eee
+            <Glyph>↓</Glyph>
+          </a>
+        </div>
+      </div>
       {/* header rule ends in a hollow node, like a net on a schematic */}
       <div className="relative mt-5 border-t hairline">
         <span
@@ -221,8 +226,9 @@ function Intro() {
   return (
     <div className="mt-10 space-y-4 leading-relaxed">
       <p>
-        Kia ora! I'm Eric, Dohyun Kim on paper, a penultimate year Computer Systems
-        Engineering (Hons) student at the University of Auckland.
+        Kia ora! I'm Eric, Dohyun Kim on paper, a penultimate Computer Systems
+        Engineering (Hons) student at the University of Auckland. This page is my
+        datasheet, and I'm the component.
       </p>
       <p className="text-neutral-600 dark:text-neutral-400">
         I like the boundary where hardware meets software: microcontrollers with no operating
@@ -274,7 +280,7 @@ function SpecTable() {
               aria-hidden="true"
               className="mt-[0.45em] inline-block h-1.5 w-1.5 self-start rounded-full bg-emerald-500"
             />
-            In stock, Open to Internships Nov 2026 to Feb 2027
+            In stock
           </span>
         </SpecRow>
       </dl>
@@ -315,25 +321,15 @@ function Section({ id, index, title, children }) {
   )
 }
 
-function Footer({ theme, onToggleTheme }) {
+function Footer() {
   return (
     <footer className="mt-16 flex items-center justify-between gap-4 border-t hairline pb-10 pt-5">
       <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-500">
         <span className="normal-case">EKmega327P</span> · © 2026 Dohyun (Eric) Kim
       </p>
-      <div className="flex items-center gap-4">
-        <span className="hidden font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500 sm:inline dark:text-neutral-500">
-          Auckland, NZ
-        </span>
-        <button
-          type="button"
-          onClick={onToggleTheme}
-          aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
-          className="print-hidden inline-flex h-7 w-7 items-center justify-center border hairline text-neutral-500 transition-colors hover:text-ink dark:text-neutral-400 dark:hover:text-ink-dark"
-        >
-          {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
-        </button>
-      </div>
+      <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-500">
+        Auckland, NZ
+      </span>
     </footer>
   )
 }
