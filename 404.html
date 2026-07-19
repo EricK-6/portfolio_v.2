@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="/chip.svg" />
+    <title>404 · Eric Kim</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background-color: #f7f6f3;
+        background-image:
+          linear-gradient(to right, rgba(28, 25, 23, 0.04) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(28, 25, 23, 0.04) 1px, transparent 1px);
+        background-size: 28px 28px;
+        color: #1c1917;
+        font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.7;
+      }
+      main { max-width: 26rem; width: 100%; }
+      .label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: #78716c;
+      }
+      h1 { margin-top: 10px; font-size: 22px; font-weight: 600; }
+      p { margin-top: 8px; color: #57534e; font-size: 15px; }
+      a { color: inherit; text-underline-offset: 3px; }
+      hr { margin-top: 20px; border: 0; border-top: 1px solid rgba(28, 25, 23, 0.15); }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #0b0b0c;
+          background-image:
+            linear-gradient(to right, rgba(231, 229, 228, 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(231, 229, 228, 0.05) 1px, transparent 1px);
+          color: #e7e5e4;
+        }
+        .label { color: #a8a29e; }
+        p { color: #a8a29e; }
+        hr { border-top-color: rgba(231, 229, 228, 0.15); }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="label">EK-2027 · Error 404</p>
+      <h1>Page not found.</h1>
+      <p>This page isn't in the datasheet.</p>
+      <hr />
+      <p><a href="/">&larr; back to erickk.cloud</a></p>
+    </main>
+  </body>
+</html>

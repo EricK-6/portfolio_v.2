@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./chip.svg" />
+
+    <title>Eric Kim · Computer Systems Engineering @ UoA</title>
+    <meta
+      name="description"
+      content="Dohyun (Eric) Kim, Computer Systems Engineering student at the University of Auckland. Embedded systems, full stack, digital hardware. Open to internships."
+    />
+    <meta name="author" content="Dohyun (Eric) Kim" />
+    <link rel="canonical" href="https://erickk.cloud/" />
+
+    <!-- browser chrome matches the paper/ink palette -->
+    <meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
+
+    <!-- Open Graph (LinkedIn, Twitter, Slack previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Eric Kim · Computer Systems Engineering @ UoA" />
+    <meta
+      property="og:description"
+      content="Embedded systems, full stack, digital hardware. Open to internships, Nov 2026 to Feb 2027."
+    />
+    <meta property="og:image" content="https://erickk.cloud/og-image.png?v=3" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://erickk.cloud/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://erickk.cloud/og-image.png?v=3" />
+
+    <!-- structured data for search engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dohyun Kim",
+        "alternateName": "Eric Kim",
+        "url": "https://erickk.cloud/",
+        "image": "https://erickk.cloud/me.jpg",
+        "jobTitle": "Computer Systems Engineering Student",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Auckland"
+        },
+        "knowsAbout": ["Embedded Systems", "FPGA", "Cloud Computing", "Software Engineering"],
+        "sameAs": [
+          "https://github.com/EricK-6",
+          "https://www.linkedin.com/in/erick06/"
+        ]
+      }
+    </script>
+
+    <!-- set the theme before first paint so dark mode never flashes light -->
+    <script>
+      try {
+        var t = localStorage.getItem('theme')
+        if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark')
+        }
+      } catch (e) { /* private mode */ }
+    </script>
+
+    <!-- fonts are self-hosted (Fontsource, imported in src/main.jsx): no
+         third-party origins, no render-blocking remote stylesheet -->
+    <script type="module" crossorigin src="./assets/index-CXkkL_l0.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BKfICFft.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="max-width: 42rem; margin: 4rem auto; padding: 0 1.5rem; font-family: system-ui, sans-serif; line-height: 1.6">
+        Dohyun (Eric) Kim, Computer Systems Engineering student at the University of Auckland.
+        Embedded systems, full stack, digital hardware. Open to internships:
+        dohyunkim290106@gmail.com
+      </p>
+    </noscript>
+
+    <!-- GoatCounter (privacy-friendly analytics); it skips localhost by itself -->
+    <script data-goatcounter="https://erickk.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  </body>
+</html>
