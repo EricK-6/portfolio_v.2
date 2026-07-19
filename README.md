@@ -1,8 +1,8 @@
-# erickk.cloud — rev 2.0, "the datasheet"
+# Eric Kim's portfolio — rev 2.0, "the datasheet"
 
 Hey, I'm **Dohyun (Eric) Kim**, a Computer Systems Engineering (Hons) student at the University of Auckland. This is my personal site — the thing I point recruiters at while hunting for internships.
 
-🔗 **Live at [erickk.cloud](https://erickk.cloud/)**
+🔗 **Live at [erick-6.github.io/portfolio_v.2](https://erick-6.github.io/portfolio_v.2/)** (new domain TBD; rev 1 stays at [erickk.cloud](https://erickk.cloud/))
 
 Rev 2.0 is a deliberate about-face from rev 1 (a 3D "space mode" with a boarding-pass hero, terminal dock and command palette — it lives on in git history). The new site is typography-first and styled like a **component datasheet**, because that's the kind of engineer I am:
 
