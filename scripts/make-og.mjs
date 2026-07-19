@@ -2,7 +2,7 @@ import sharp from 'sharp'
 import { fileURLToPath } from 'node:url'
 
 // Regenerates public/og-image.png (the datasheet social preview).
-// sharp is not a project dependency — install it temporarily to run:
+// sharp is not a project dependency; install it temporarily to run:
 //   npm i --no-save sharp && node scripts/make-og.mjs
 // Bump the ?v= query on the og:image URLs in index.html afterwards so
 // LinkedIn/Twitter refetch the cached image.
@@ -31,7 +31,7 @@ const specRow = (y, label, value) => `
   <text x="${LX}" y="${y}" font-family="${MONO}" font-size="14" letter-spacing="3" fill="${GREY_500}">${label}</text>
   <text x="${LX + 186}" y="${y}" font-family="${SANS}" font-size="21" fill="${INK}">${value}</text>`
 
-// DIP-8 pin configuration, top view, notch up — the joke pinout
+// DIP-8 pin configuration, top view, notch up: the joke pinout
 const CHIP_CX = 962
 const CHIP_X = 884, CHIP_Y = 312, CHIP_W = 156, CHIP_H = 216
 const PIN_YS = [352, 400, 448, 496]

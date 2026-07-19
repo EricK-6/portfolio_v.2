@@ -11,7 +11,7 @@
   body {
     @apply bg-paper font-sans text-ink antialiased dark:bg-paper-dark dark:text-ink-dark;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
-    /* engineering graph paper — fine enough to whisper, never to talk */
+    /* engineering graph paper: fine enough to whisper, never to talk */
     background-image:
       linear-gradient(to right, rgb(28 25 23 / 0.04) 1px, transparent 1px),
       linear-gradient(to bottom, rgb(28 25 23 / 0.04) 1px, transparent 1px);

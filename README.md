@@ -1,19 +1,19 @@
-# Eric Kim's portfolio — rev 2.0, "the datasheet"
+# Eric Kim's portfolio, rev 2.0: "the datasheet"
 
-Hey, I'm **Dohyun (Eric) Kim**, a Computer Systems Engineering (Hons) student at the University of Auckland. This is my personal site — the thing I point recruiters at while hunting for internships.
+Hey, I'm **Dohyun (Eric) Kim**, a Computer Systems Engineering (Hons) student at the University of Auckland. This is my personal site: the thing I point recruiters at while hunting for internships.
 
 🔗 **Live at [erick-6.github.io/portfolio_v.2](https://erick-6.github.io/portfolio_v.2/)** (new domain TBD; rev 1 stays at [erickk.cloud](https://erickk.cloud/))
 
-Rev 2.0 is a deliberate about-face from rev 1 (a 3D "space mode" with a boarding-pass hero, terminal dock and command palette — it lives on in its own repo, [`edk.portfolio`](https://github.com/EricK-6/edk.portfolio)). The new site is typography-first and styled like a **component datasheet**, because that's the kind of engineer I am:
+Rev 2.0 is a deliberate about-face from rev 1 (a 3D "space mode" with a boarding-pass hero, terminal dock and command palette; it lives on in its own repo, [`edk.portfolio`](https://github.com/EricK-6/edk.portfolio)). The new site is typography-first and styled like a **component datasheet**, because that's the kind of engineer I am:
 
 - One narrow column of prose on faint engineering graph paper.
 - Mono, numbered section labels (`01 · SELECTED WORK`) and hairline rules.
-- A **SPECIFICATIONS** table for the quick facts — programme, graduation, focus, certs.
-- Part number `EKmega327P` — an ATmega328P one digit off, pointing at the '27 graduation — with an 8-pin DIP chip as the site mark and favicon.
+- A **SPECIFICATIONS** table for the quick facts: programme, graduation, focus, certs.
+- Part number `EKmega327P` (an ATmega328P one digit off, pointing at the '27 graduation), with an 8-pin DIP chip as the site mark and favicon.
 - Exactly one drop of colour: the emerald "in stock" status dot.
 - Light (paper) and dark (graphite) themes, following the OS and remembered after a toggle.
 
-No images, no animation frameworks, no router — the writing carries the site.
+No images, no animation frameworks, no router; the writing carries the site.
 
 ## Built with
 
@@ -63,10 +63,10 @@ Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/dep
 
 ## Editing the content
 
-Everything lives in [`src/App.jsx`](src/App.jsx): the intro prose, the `WORK` array, the spec table rows, the teaching section. Edit the text, save, done. The CVs are plain files in `public/` — replace and push.
+Everything lives in [`src/App.jsx`](src/App.jsx): the intro prose, the `WORK` array, the spec table rows, the teaching section. Edit the text, save, done. The CVs are plain files in `public/`; replace and push.
 
 ## Notes to self
 
-- Rev 1's code isn't in this repo — this history starts at the rev 2.0 rewrite. The museum is [`edk.portfolio`](https://github.com/EricK-6/edk.portfolio), still deployed at [erickk.cloud](https://erickk.cloud/).
+- Rev 1's code isn't in this repo; this history starts at the rev 2.0 rewrite. The museum is [`edk.portfolio`](https://github.com/EricK-6/edk.portfolio), still deployed at [erickk.cloud](https://erickk.cloud/).
 - Contact is a plain `mailto:` now (no Formspree form in rev 2.0).
-- `public/CV_*.pdf` are public once deployed — keep redacted versions if needed.
+- `public/CV_*.pdf` are public once deployed; keep redacted versions if needed.

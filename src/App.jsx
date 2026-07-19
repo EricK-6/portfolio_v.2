@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 // ---------------------------------------------------------------------------
-// Eric Kim's site, rev 2.0 — the site as a component datasheet (part EKmega327P).
+// Eric Kim's site, rev 2.0: the site as a component datasheet (part EKmega327P).
 // One narrow column of prose on graph paper; the typography is the design.
 // All content lives in this file, so editing the site means editing prose.
 // ---------------------------------------------------------------------------
@@ -15,7 +15,7 @@ const WORK = [
     name: 'Winnie the Bot',
     year: '2025',
     body:
-      'Companion robot that holds your gaze, waves, and talks back — an embedded system ' +
+      'Companion robot that holds your gaze, waves, and talks back: an embedded system ' +
       'that reads as a character, not a circuit board. Dual bare metal ATmega328Ps ' +
       'driving servos, an AI camera, and audio, in a 3D modelled enclosure measured out ' +
       'by vernier caliper. 3rd place, UoA ECSE Design Competition.',
@@ -221,7 +221,7 @@ function Intro() {
   return (
     <div className="mt-10 space-y-4 leading-relaxed">
       <p>
-        Kia ora! I'm Eric, Dohyun Kim on paper, a penultimate-year Computer Systems
+        Kia ora! I'm Eric, Dohyun Kim on paper, a penultimate year Computer Systems
         Engineering (Hons) student at the University of Auckland.
       </p>
       <p className="text-neutral-600 dark:text-neutral-400">
@@ -274,7 +274,7 @@ function SpecTable() {
               aria-hidden="true"
               className="mt-[0.45em] inline-block h-1.5 w-1.5 self-start rounded-full bg-emerald-500"
             />
-            in stock, open to internships Nov 2026 to Feb 2027
+            In stock, Open to Internships Nov 2026 to Feb 2027
           </span>
         </SpecRow>
       </dl>
