@@ -129,7 +129,11 @@ export default function App() {
           <div className="space-y-4 leading-relaxed text-neutral-600 dark:text-neutral-400">
             <p>
               The constant this year is teaching. I'm a robotics instructor at ciLab,
-              coaching school teams for nationwide competitions.
+              coaching school teams for nationwide competitions. Every session runs the
+              whole engineering loop in miniature: design, build, code, then debug when
+              the robot does exactly what it was told instead of what was meant. Watching
+              a team's robot finally complete its run beats almost anything else on this
+              page.
             </p>
             <p>
               Around the university I tutor junior engineers at the Korean Engineering Body,
