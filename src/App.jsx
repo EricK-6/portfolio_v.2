@@ -128,9 +128,8 @@ export default function App() {
         <Section id="teaching" index="02" title="Teaching the craft">
           <div className="space-y-4 leading-relaxed text-neutral-600 dark:text-neutral-400">
             <p>
-              The constant this year is teaching. I'm a Teaching Assistant for ELECTENG 292
-              (Electronics) at the University of Auckland, and a robotics instructor at
-              ciLab, coaching school teams for nationwide competitions.
+              The constant this year is teaching. I'm a robotics instructor at ciLab,
+              coaching school teams for nationwide competitions.
             </p>
             <p>
               Around the university I tutor junior engineers at the Korean Engineering Body,
