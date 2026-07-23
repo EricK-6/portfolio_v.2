@@ -121,7 +121,7 @@ export default function App() {
             ))}
           </ul>
           <p className="mt-7 text-neutral-600 dark:text-neutral-400">
-            More on <Ext href={GITHUB}>GitHub</Ext>, including an Android meal planner and a
+            More on <Ext href={GITHUB}>GitHub</Ext>, including a club first-ever website,an Android meal planner and a
             PyQt forecasting desktop app.
           </p>
         </Section>
