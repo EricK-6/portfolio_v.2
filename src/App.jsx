@@ -25,10 +25,9 @@ const WORK = [
     name: 'Spottern!',
     year: '2026',
     body:
-      'Statement-level fraud detection on a serverless AWS pipeline (SNS, Lambda, ' +
-      'Textract, Bedrock, DynamoDB), with a schema-validated JSON contract making ' +
-      'Claude Opus 4.8 cite the transaction IDs behind every fraud flag. Built at the ' +
-      'AWS×BNZ AI Hackathon.',
+      'Statement-level fraud detection: a serverless AWS pipeline of SNS, Lambda, ' +
+      'Textract, Bedrock, and DynamoDB, with Claude Opus 4.8 citing the transaction ' +
+      'IDs behind every fraud flag.',
     links: [
       { label: 'live', href: 'https://erick-6.github.io/Spottern/' },
       { label: 'repo', href: 'https://github.com/EricK-6/Spottern' },
