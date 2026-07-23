@@ -22,6 +22,16 @@ const WORK = [
     links: [],
   },
   {
+    name: 'Spottern!',
+    year: '2026',
+    body:
+      'Statement-level fraud detection on a serverless AWS pipeline: SNS, Lambda, ' +
+      'Textract, Bedrock, and DynamoDB reason over a whole bank statement in one pass. ' +
+      'A schema-validated JSON contract makes Claude Opus 4.8 cite the transaction IDs ' +
+      'behind every fraud flag. Built at the AWS×BNZ AI Hackathon.',
+    links: [{ label: 'live', href: 'https://erick-6.github.io/Spottern/' }],
+  },
+  {
     name: 'Sentiment PULSE',
     year: '2026',
     body:
