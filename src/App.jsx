@@ -27,7 +27,7 @@ const WORK = [
     body:
       'Statement-level fraud detection: a serverless AWS pipeline of SNS, Lambda, ' +
       'Textract, Bedrock, and DynamoDB, with Claude Opus 4.8 citing the transaction ' +
-      'IDs behind every fraud flag.',
+      'IDs behind every fraud flag. Delivered on AWS×BNZ AI Hackathon 2026.',
     links: [
       { label: 'live', href: 'https://erick-6.github.io/Spottern/' },
       { label: 'repo', href: 'https://github.com/EricK-6/Spottern' },
@@ -40,7 +40,7 @@ const WORK = [
       'Real-time sentiment dashboard: streaming text through Kinesis, Lambda, and ' +
       'Comprehend into DynamoDB, read by a live React dashboard on Amplify.',
     links: [
-      { label: 'demo', href: 'https://master.d3t61ak2oiedfz.amplifyapp.com/' },
+      { label: 'live', href: 'https://master.d3t61ak2oiedfz.amplifyapp.com/' },
       { label: 'repo', href: 'https://github.com/EricK-6/sentiment-dashboard' },
     ],
   },
@@ -121,7 +121,7 @@ export default function App() {
             ))}
           </ul>
           <p className="mt-7 text-neutral-600 dark:text-neutral-400">
-            More on <Ext href={GITHUB}>GitHub</Ext>, including a club first-ever website,an Android meal planner and a
+            More on <Ext href={GITHUB}>GitHub</Ext>, including a Social club first website, an Android meal planner and a
             PyQt forecasting desktop app.
           </p>
         </Section>
@@ -129,23 +129,23 @@ export default function App() {
         <Section id="teaching" index="02" title="Teaching the craft">
           <div className="space-y-4 leading-relaxed text-neutral-600 dark:text-neutral-400">
             <p>
-              The constant this year is teaching. I'm a robotics instructor at ciLab,
+              The constant this year is Teaching. I'm a robotics instructor at ciLab,
               coaching school teams for nationwide competitions. Every session is the
               engineering loop in miniature, and watching a team's robot finally complete
               its run beats almost anything else on this page.
             </p>
             <p>
               Around the university I tutor junior engineers at the Korean Engineering Body,
-              and I keep coming back to robotics: 40+ volunteer hours at NZRO 2025, then
-              staff at NZRO 2026 and the World Robot Olympiad 2026 with CARES.
+              and I keep coming back to robotics competitions: 40+ volunteer hours at NZRO 2025, then
+              official staff at NZRO 2026 & WRO 2026 with UoA Robotics Lab, CARES.
             </p>
           </div>
         </Section>
 
         <Section id="reach" index="03" title="Direct line">
           <p className="leading-relaxed text-neutral-600 dark:text-neutral-400">
-            Email is the direct line, and I read every message. The CVs live at the top:
-            swe for software teams, eee for hardware.
+            Email is the direct line to me, and I read every emails. The CVs are live at the top:
+            swe for software teams, eee for hardware teams.
           </p>
           <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2.5 font-mono text-xs">
             <li>
