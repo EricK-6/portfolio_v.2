@@ -62,17 +62,6 @@ const WORK = [
       { label: 'repo', href: 'https://github.com/uoa-ece209-2025/ec209-2025-project-2025_team_41' },
     ],
   },
-  {
-    name: 'KEB Web Design',
-    year: '2025',
-    body:
-      "The Korean Engineering Body's first ever website, built with React and Vite " +
-      'and shipped from scratch with a student team.',
-    links: [
-      { label: 'live', href: 'https://keb-project.vercel.app/' },
-      { label: 'repo', href: 'https://github.com/Patrick-Sheng/keb-project' },
-    ],
-  },
 ]
 
 export default function App() {
